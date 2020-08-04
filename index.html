@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Face-Detection</title>
+<meta charset="utf-8" />
+</head>
+ 
+<body>
+    <header>
+       <h1>VSBLTY Kiosk.com</h1>
+       <p>Component - Face Detection</p>
+    </header>
+      <h3>IpServer: {{ IpServer }} </h3>
+      <h3>Server-Pubsher: {{ ServerPubsher }} </h3>
+      <h3>Server-Subcriber: {{ ServerSubcriber }} </h3>
+      <h3>Endpoint: {{ Endpoint }} </h3>
+
+      <h2>Settings</h2>
+
+<form action="/Settings" method="POST">
+
+  <label for="fname">IpServer:</label><br>
+  <input type="text" id="IpServer" name="IpServer" value={{ IpServer }}><br>
+
+  <label for="lname">ServerPubsher</label><br>
+  <input type="text" id="ServerPubsher" name="ServerPubsher" value={{ ServerPubsher }}><br>
+
+  <label for="lname">ServerSubcriber</label><br>
+  <input type="text" id="ServerSubcriber" name="ServerSubcriber" value={{ ServerSubcriber }}><br>
+  
+  <label for="lname">Endpoint</label><br>
+  <input type="text" id="Endpoint" name="Endpoint" value={{ Endpoint }} ><br><br>
+  <input type="submit" value="Submit">
+</form> 
+</body>
+</html>
